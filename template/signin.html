@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>SignIn</title>
+		<link rel="stylesheet" type="text/css" href="style/signin.css"/>
+		<script type="text/javascript" src="script/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="script/signin.js"></script>
+	</head>
+
+	<body>
+		<div id="login">
+		  <h1>Please login</h1>
+		  <br>
+		  	<form  id="signin-form" onsubmit="return false">
+			Userid:<input type="text" placeholder="Userid" name="Username" value="">
+			</br>
+			</br>
+			Password:<input type="password" placeholder="Password" name="Password" value="">
+			</br>
+			</br>
+			<input class="btn btn-default" type="submit" value="Login" onclick="loginSubmit()" onsubmit="return false">
+		  	</form>
+			</br>
+					<div id="login-message"></div>
+				</div>
+
+
+  </body>

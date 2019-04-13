@@ -1,0 +1,72 @@
+<div id="div-three">
+  <div id="connect">
+    <form id="ftp-form"  onsubmit="return false" >
+      <input class="b1" type="button" value="FTP" onclick='access("ftp")' />
+    </form>
+    <form id="web-form"   onsubmit="return false" >
+      <input class="b1" type="button" value="WEB" onclick='access("web")' />
+    </form>
+    <form id="ssh-form"   onsubmit="return false" >
+      <input class="b1" type="button" value="SSH" onclick='access("ssh")' />
+    </form>
+  </div>
+  <div id="house" >
+    <button  id="all-fav"  class="b1" form="search-form" onclick="allFav()"><div id="sDiv">Show-All</div></button>
+    <form id="addServer"  onsubmit="return false" >
+      <input class="b1" type="button" value="AddServer" onclick='addPage()' />
+    </form>
+    <form id="delete-form" onsubmit="return false" >
+      <input class="b1" type="button"  value="Delete" onclick='deleteServer()' />
+    </form>
+    <form id="edit-form" onsubmit="return false" >
+      <input class="b1" type="button" value="Edit" onclick='editServer()' />
+    </form>
+    <button  id="query-button" class="b1" onclick="queryFunc()" ><div id="show" >Query-View</div>
+      <div id="hide" style="display:none">Query-Hide</div></button>
+    </div>
+  </div>
+  <p style="display:none"></p>
+  <form id="search-form" onsubmit="return false" style="display:none" >
+  <table width="80%">
+    <thead >
+      <tr style="text-align: left;">
+        <th width="5%">SrvId</th>
+        <th width="10%">Name</th>
+        <th width="10%">IP</th>
+        <th width="10%">Hostname</th>
+        <th width="10%">Product</th>
+        <th width="10%">Datacenter</th>
+        <th width="10%">Favourite</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="text-align: left;">
+        <th><input name="srvId"/></th>
+        <th><input name="name"/></th>
+        <th><input name="ip"/></th>
+        <th><input name="hostname"/></th>
+        <th><input name="product"/></th>
+        <th><input name="datacenter"/></th>
+        <th id="fav-view">Fav-Only</th>
+    </tr>
+  </tbody>
+</table>
+<input type="hidden" id="fav-query" name="fav" value="true"/>
+<input class="b1" type="submit"  form="search-form" value="Search" onclick="submitSearch()" onsubmit="return false" />
+</form>
+<table width="100%">
+  <thead >
+    <tr style="text-align: left;">
+      <th width="5%">SrvId</th>
+      <th width="10%">Name</th>
+      <th width="10%">IP</th>
+      <th width="10%">Hostname</th>
+      <th width="10%">Product</th>
+      <th width="10%">Datacenter</th>
+      <th width="10%">LastAccessed</th>
+    </tr>
+  </thead>
+  <tbody id="search-results" >
+    <link rel="stylesheet" type="text/css" href="style/index.css"/>
+  </tbody>
+</table>

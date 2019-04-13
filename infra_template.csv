@@ -1,0 +1,2 @@
+name,ip,hostname,osUser,osPassword,osPort,webPort,product,datacenter,webPrefix,webSuffix,fav
+NameExmplae,127.0.0.2,ExampleHistname,root,rootpw,22,8080,WebServer,MyDataceneter,http://,myServer,true

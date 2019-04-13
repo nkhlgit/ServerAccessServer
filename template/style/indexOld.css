@@ -1,0 +1,72 @@
+body {
+  color: black;
+}
+
+#logoff {
+  float:right;
+}
+#div-two{
+color: white;
+float: left;
+}
+
+.b2  {
+background-color:hsl(200, 100%, 50%,1);
+padding: 3px 12px; /* Some padding */
+ cursor: pointer;
+}
+
+.b1  {
+background-color:hsl(190, 100%, 50%,1);
+ cursor: pointer;
+ padding: 4px 12px;
+ border-radius: 8px
+}
+
+button:hover, .b1:hover {
+  background-color:hsl(80, 100%, 60%,0.6);
+  border-radius: 2px
+}
+
+#message{
+  background-color:hsl(57, 100%, 50%);
+  display:inline-block;
+  left: 0;
+right: 0;
+}
+
+#twoDiv {
+  display:block;
+}
+
+
+#house form
+{
+display: inline-block;
+    float: right;
+}
+
+#connect form
+{
+    display: inline-block;
+    float: left;
+}
+
+thead {
+  background-color:hsl(120,100%,25%,0.6);
+}
+
+body table tbody {
+  background-color:hsl(206, 100%, 91%,0.6);
+}
+
+#search-results tr:hover {
+font-size: 20px;
+background-color: hsl(146, 100%, 20%,0.4);
+ cursor: pointer;
+}
+
+.selected {
+  background-color: rgba(41, 103, 182, 0.89);
+  color: #FFF;
+}

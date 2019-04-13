@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>AddServer</title>
+		<link rel="stylesheet" type="text/css" href="style/addPage.css"/>
+		<script type="text/javascript" src="script/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="script/addPage.js"></script>
+	</head>
+
+	<body>
+		<button type="Submit" value="back" onclick="goBack()" onsubmit="return false"> back</button>
+		<div id="oneSrvAdd">
+			<h4>Add one server</h4>
+			<form id="add-form" onsubmit="return false">
+					<input type="hidden" name="reqType" value="add" />
+	  			Name: <input type="text" name="name"><br>
+	  			IP: <input type="text" name="ip"><br>
+				Hostname: <input type="text" name="hostname"><br>
+				OS-User: <input type="text" name="osUser"><br>
+				OS-Password: <input type="text" name="osPassword"><br>
+				OS-Port: <input type="text" name="osPort"><br>
+				Web-Port: <input type="text" name="webPort"><br>
+				Product: <input type="text" name="product"><br>
+				Datacenter: <input type="text" name="datacenter"><br>
+				Web-Prefix: <input type="text" name="webPrefix"><br>
+				Web-Suffix: <input type="text" name="webSuffix"><br>
+				Faviourate: <input type="checkbox" name="fav"><br>
+			</form>
+		<button type="Submit" form="add-form" value="Add" onclick="addEditSubmit()" onsubmit="return false">Add</button>
+		<p id="add-result"></p>
+		</div>
+		<hr>
+		<div id="manyServerAdd" >
+			<h4>Bulk import servers</h4>
+			<input id="the-file"enctype="multipart/form-data" type="file" name="uploadFile" accept=".csv"  onchange="uploadFunction()" onsubmit="return false"><br>
+			<progress id="progressBar" value="0" max="100" style="width:300px;"></progress>
+			<h3 id="status">status</h3>
+			<p id="loaded_n_total">Total</p>
+		</div>
+	</body>
